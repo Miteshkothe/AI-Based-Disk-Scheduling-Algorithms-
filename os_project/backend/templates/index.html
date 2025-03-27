@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Disk Scheduling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>AI-Based Disk Scheduling</h1>
+    <input type="text" id="requests" placeholder="Enter requests (comma-separated)">
+    <input type="number" id="head" placeholder="Initial Head Position">
+    <select id="algorithm">
+        <option value="FCFS">FCFS</option>
+        <option value="SSTF">SSTF</option>
+        <option value="SCAN">SCAN</option>
+        <option value="AI">AI-Based</option>
+    </select>
+    <button id="schedule-btn">Schedule</button>
+    <div id="output"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
